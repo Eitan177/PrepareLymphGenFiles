@@ -1,4 +1,4 @@
-from Bio import Entrez
+#from Bio import Entrez
 #import ssl
 #import urllib.request
 import streamlit as st
