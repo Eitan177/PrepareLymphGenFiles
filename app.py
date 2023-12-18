@@ -45,8 +45,8 @@ if fileuse != []:
                 f_use.drop(index, inplace=True)                
             #elif row['VARIANT_TYPE'] == 'SNP':
             #    f_use.drop(index, inplace=True)
-            elif row['FILTER'] != 'PASS':   
-                f_use.drop(index, inplace=True) 
+            #elif row['FILTER'] != 'PASS':   
+            #    f_use.drop(index, inplace=True) 
         f_use=get_entrez_id(f_use)
         f_use['Sample']=f_use['#SAMPLE_NAME'].astype(str)
         f_use['ENTREZ.ID']=f_use['entrezgene_id']
